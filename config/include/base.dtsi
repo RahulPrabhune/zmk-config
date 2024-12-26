@@ -19,9 +19,7 @@
    time-to-max-speed-ms = <680>;
    acceleration-exponent=<2>;
 };
-/ {
-
-
+{
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
