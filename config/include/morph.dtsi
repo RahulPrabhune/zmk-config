@@ -38,7 +38,7 @@ MAKE_MORPH(rpar_inner_morph,  &kp RBKT,        &kp RBRC,           CTL)
 
 
 // tap: backspace | CTRL + tap: delete | hold: Nav layer
-MAKE_MORPH(bspc_morph,      &lt NAV BSPC,     &kp DEL,          CRL)
+MAKE_MORPH(bspc_morph,      &lt NAV BSPC,     &kp DEL,          CTL)
 // tap: space | CTRL + tap: key_repeat | hold: Num layer
 MAKE_MORPH(space_morph,       &lt NUM SPACE,   &key_repeat,          CTL)
 
