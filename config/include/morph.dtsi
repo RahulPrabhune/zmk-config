@@ -14,13 +14,21 @@
         }; \
     };
 
-// tap: comma | shift + tap: semicolon | ctrl + shift + tap: <
+// tap: comma | shift + tap: semicolon | ctrl + shift + tap: colon
 MAKE_MORPH(comma_morph,       &kp COMMA,       &comma_inner_morph, SFT)
-MAKE_MORPH(comma_inner_morph, &kp SEMICOLON,   &kp LESS_THAN,      CTL)
+MAKE_MORPH(comma_inner_morph, &kp SEMICOLON,   &kp COLON,      CTL)
 
-// tap: dot | shift + tap: colon | ctrl + shift + tap: >
+// tap: dot | shift + tap: ? | ctrl + shift + tap: ~
 MAKE_MORPH(dot_morph,         &kp DOT,         &dot_inner_morph,   SFT)
-MAKE_MORPH(dot_inner_morph,   &kp COLON,       &kp GREATER_THAN,   CTL)
+MAKE_MORPH(dot_inner_morph,   &kp QMARK,       &kp TILDE,   CTL)
+
+// tap: ' | shift + tap: " | ctrl + shift + tap: `
+MAKE_MORPH(quote_morph,         &kp SQT,         &quote_inner_morph,   SFT)
+MAKE_MORPH(quote_inner_morph,   &kp DQT,       &kp GRAVE,   CTL)
+
+// tap: @ | shift + tap: & | ctrl + shift + tap: |
+MAKE_MORPH(symbol_morph,         &kp AT,         &symbol_inner_morph,   SFT)
+MAKE_MORPH(symbol_inner_morph,   &kp AMPS,       &kp PIPE,   CTL)
 
 // tap: parenthesis | shift + tap: bracket | ctrl + shift + tap: brace
 MAKE_MORPH(lpar_morph,        &kp LPAR,        &lpar_inner_morph,  SFT)
@@ -28,10 +36,16 @@ MAKE_MORPH(lpar_inner_morph,  &kp LBKT,        &kp LBRC,           CTL)
 MAKE_MORPH(rpar_morph,        &kp RPAR,        &rpar_inner_morph,  SFT)
 MAKE_MORPH(rpar_inner_morph,  &kp RBKT,        &kp RBRC,           CTL)
 
-// tap: escap | shift + tap: ~
-MAKE_MORPH(escape_morph,      &lt NAV ESC,     &kp TILDE,          SFT)
-// tap: space | shift + tap: `
-MAKE_MORPH(space_morph,       &lt NUM SPACE,   &kp GRAVE,          SFT)
+
+// tap: backspace | CTRL + tap: delete | hold: Nav layer
+MAKE_MORPH(bspc_morph,      &lt NAV BSPC,     &kp DEL,          CRL)
+// tap: space | CTRL + tap: key_repeat | hold: Num layer
+MAKE_MORPH(space_morph,       &lt NUM SPACE,   &key_repeat,          CTL)
+
+// tap: enter | CTRL + tap: TAB | hold: Num layer
+MAKE_MORPH(enter_morph,       &lt SYM ENTER,   &kp TAB,          CTL)
+// tap: ESC | ctrl + tap: CMD | hold: Shift
+MAKE_MORPH(esc_morph,      &tp &mt MOD_LSFT &kp ESC,     &sk RGUI,          CTL)
 
 // tap: print_screen | shift + tap: mute
 // tap: scroll lock  | shift + tap: vol down
