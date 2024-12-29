@@ -45,7 +45,8 @@ MAKE_MORPH(space_morph,       &lt NUM SPACE,   &key_repeat,          CTL)
 // tap: enter | CTRL + tap: TAB | hold: Num layer
 MAKE_MORPH(enter_morph,       &lt SYM ENTER,   &kp TAB,          CTL)
 // tap: ESC | ctrl + tap: CMD | hold: Shift
-MAKE_MORPH(esc_morph,      &mt MOD_LSFT ESC,     &sk RGUI,          CTL)
+MAKE_MORPH(esc_morph,      &mt RSHFT ESC,     &sk RGUI,          CTL)
+
 
 // tap: print_screen | shift + tap: mute
 // tap: scroll lock  | shift + tap: vol down
@@ -53,6 +54,3 @@ MAKE_MORPH(esc_morph,      &mt MOD_LSFT ESC,     &sk RGUI,          CTL)
 MAKE_MORPH(print_morph,       &kp PSCRN,       &kp C_MUTE,         SFT)
 MAKE_MORPH(scrl_morph,        &kp SCLK,        &kp C_VOL_DN,       SFT)
 MAKE_MORPH(pause_morph,       &kp PAUSE_BREAK, &kp C_VOL_UP,       SFT)
-
-// tap: backspace | shift + tap: delete
-MAKE_MORPH(bspc_morph,        &kp BSPC,        &kp DEL,            SFT)
