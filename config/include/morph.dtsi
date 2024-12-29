@@ -24,7 +24,7 @@ MAKE_MORPH(dot_inner_morph,   &kp QMARK,       &kp TILDE,   CTL)
 
 // tap: ' | shift + tap: " | ctrl + shift + tap: `
 MAKE_MORPH(quote_morph,         &kp SQT,         &quote_inner_morph,   SFT)
-MAKE_MORPH(quote_inner_morph,   &kp DQT,       &kp GRAVE,   CTL)
+MAKE_MORPH(quote_inner_morph,   &kp DQT,       &kp GRAVE ACCENT,   CTL)
 
 // tap: @ | shift + tap: & | ctrl + shift + tap: |
 MAKE_MORPH(symbol_morph,         &kp AT,         &symbol_inner_morph,   SFT)
@@ -37,15 +37,15 @@ MAKE_MORPH(rpar_morph,        &kp RPAR,        &rpar_inner_morph,  SFT)
 MAKE_MORPH(rpar_inner_morph,  &kp RBKT,        &kp RBRC,           CTL)
 
 
-// tap: backspace | CTRL + tap: delete | hold: Nav layer
-MAKE_MORPH(bspc_morph,      &lt NAV BSPC,     &kp DEL,          CTL)
+// tap: ESC | ctrl + tap: CMD | hold: Nav layer
+MAKE_MORPH(bspc_morph,      &lt NAV ESC,     &sk RGUI,          CTL)
 // tap: space | CTRL + tap: key_repeat | hold: Num layer
 MAKE_MORPH(space_morph,       &lt NUM SPACE,   &key_repeat,          CTL)
 
 // tap: enter | CTRL + tap: TAB | hold: Num layer
 MAKE_MORPH(enter_morph,       &lt SYM ENTER,   &kp TAB,          CTL)
-// tap: ESC | ctrl + tap: CMD | hold: Shift
-MAKE_MORPH(esc_morph,      &mt RSHFT ESC,     &sk RGUI,          CTL)
+// tap: backspace | CTRL + tap: delete | hold: Shift
+MAKE_MORPH(esc_morph,      &mt RSHFT BSPC,     &kp DEL,          CTL)
 
 
 // tap: print_screen | shift + tap: mute
@@ -54,4 +54,3 @@ MAKE_MORPH(esc_morph,      &mt RSHFT ESC,     &sk RGUI,          CTL)
 MAKE_MORPH(print_morph,       &kp PSCRN,       &kp C_MUTE,         SFT)
 MAKE_MORPH(scrl_morph,        &kp SCLK,        &kp C_VOL_DN,       SFT)
 MAKE_MORPH(pause_morph,       &kp PAUSE_BREAK, &kp C_VOL_UP,       SFT)
-
