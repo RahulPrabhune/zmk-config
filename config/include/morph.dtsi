@@ -24,7 +24,7 @@ MAKE_MORPH(dot_inner_morph,   &kp QMARK,       &kp TILDE,   CTL)
 
 // tap: ' | shift + tap: " | ctrl + shift + tap: `
 MAKE_MORPH(quote_morph,         &kp SQT,         &quote_inner_morph,   SFT)
-MAKE_MORPH(quote_inner_morph,   &kp DQT,       &kp GRAVE ACCENT,   CTL)
+MAKE_MORPH(quote_inner_morph,   &kp DQT,       &kp GRAVE,   CTL)
 
 // tap: @ | shift + tap: & | ctrl + shift + tap: |
 MAKE_MORPH(symbol_morph,         &kp AT,         &symbol_inner_morph,   SFT)
