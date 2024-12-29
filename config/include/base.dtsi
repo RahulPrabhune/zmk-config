@@ -50,7 +50,7 @@
 
 // Home row mods macro
 // GUI -> ALT -> CTRL -> SHFT  -> HYPER    |    HYPER -> SHFT -> CTRL -> ALT -> GUI
-#define HRML(k1,k2,k3,k4,k5) &hml LGUI  k1 &hml LALT  k2 &hml LCTRL k3 &hml LGUI k4 &hml LHYPER k5
+#define HRML(k1,k2,k3,k4,k5) &hml LGUI  k1 &hml LALT  k2 &hml LCTRL k3 &hml LSHFT k4 &hml LHYPER k5
 #define HRMR(k1,k2,k3,k4) &hmr RHYPER k1 &hmr RSHFT k2 &hmr RCTRL k3 &hmr RALT  k4
 
 / {
