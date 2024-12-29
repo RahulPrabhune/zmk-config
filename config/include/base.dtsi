@@ -74,7 +74,7 @@
             //--------------------------------------------------------------------------------------------------
             X_LB     &kp Z      &kp X      &kp C      &kp V      &kp B        X_MB     &kp N      &kp M      &quote_morph  &symbol_morph  &dot_morph  X_RB
             //--------------------------------------------------------------------------------------------------
-            X_LH   &bspc_morph    @space_morph      X_MH     &enter_morph    &esc_morph  X_RH
+            X_LH   &bspc_morph    &space_morph      X_MH     &enter_morph    &esc_morph  X_RH
             >;
         };
 
