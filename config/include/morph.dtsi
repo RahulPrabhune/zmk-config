@@ -54,3 +54,4 @@ MAKE_MORPH(esc_morph,      &mt RSHFT ESC,     &sk RGUI,          CTL)
 MAKE_MORPH(print_morph,       &kp PSCRN,       &kp C_MUTE,         SFT)
 MAKE_MORPH(scrl_morph,        &kp SCLK,        &kp C_VOL_DN,       SFT)
 MAKE_MORPH(pause_morph,       &kp PAUSE_BREAK, &kp C_VOL_UP,       SFT)
+
