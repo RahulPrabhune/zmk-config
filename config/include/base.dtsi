@@ -40,9 +40,8 @@
 #define STUDIO      &studio_unlock
 
 //      layer       aliases
-#define NAV_ESC     &escape_morph
-#define NUM_SPC     &space_morph
-#define SYM_ENT     &lt SYM ENTER
+#define NAV_ESC     &lt NAV ESC
+#define NUM_SPC     &lt NUM SPACE 
 
 //      some        functions
 #define LH(key)     LS(LC(LA(LG(key))))
@@ -76,7 +75,7 @@
             //--------------------------------------------------------------------------------------------------
             X_LB     &kp Z      &kp X      &kp C      &kp V      &kp B        X_MB     &kp N      &kp M      &quote_morph  &slash_morph  &dot_morph  X_RB
             //--------------------------------------------------------------------------------------------------
-            X_LH   &lt NAV ESC    &lt NUM SPACE      X_MH     &enter_morph    &bspc_morph  X_RH
+            X_LH   NAV_ESC    NUM_SPC     X_MH     &enter_morph    &bspc_morph  X_RH
             >;
         };
 
