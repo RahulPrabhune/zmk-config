@@ -10,7 +10,6 @@
 
 // import extra functions
 #include "fillers.dtsi"
-#include "macro.dtsi"
 #include "morph.dtsi"
 #include "combos.dtsi"
 #include "behaviors.dtsi"
