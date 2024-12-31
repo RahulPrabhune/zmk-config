@@ -1,0 +1,14 @@
+#include "base.h"
+
+#define MAKE_MACRO(NAME, BINDING) \
+    / { \
+        behaviors { \
+            NAME: NAME { \
+                compatible = "zmk,behavior-macro"; \
+                bindings = <BINDING>; \
+            }; \
+        }; \
+    };
+
+
+MAKE_MACRO(macro_cmdk, '&sk LGUI &kp K &sk LGUI')                                   

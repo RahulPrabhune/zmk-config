@@ -1,6 +1,7 @@
 // vim: set ts=4 sw=4 ft=devicetree:
 
 #include "base.h"
+#include "macro.dtsi"
 
 #define MAKE_MORPH(NAME, BINDING1, BINDIGN2, MOD) \
     / { \
@@ -26,9 +27,8 @@ MAKE_MORPH(dot_inner_morph,   &kp QMARK,       &kp TILDE,   CTL)
 MAKE_MORPH(quote_morph,         &kp SQT,         &quote_inner_morph,   SFT)
 MAKE_MORPH(quote_inner_morph,   &kp DQT,       &kp GRAVE,   CTL)
 
-// tap: @ | shift + tap: & | ctrl + shift + tap: |
-MAKE_MORPH(symbol_morph,         &kp AT,         &symbol_inner_morph,   SFT)
-MAKE_MORPH(symbol_inner_morph,   &kp AMPS,       &kp PIPE,   CTL)
+// tap: / | shift + tap: \ | ctrl + shift + tap: |
+MAKE_MORPH(slash_morph,    &kp FSLH,         &kp BSLH,   CTL)
 
 // tap: parenthesis | shift + tap: bracket | ctrl + shift + tap: brace
 MAKE_MORPH(lpar_morph,        &kp LPAR,        &lpar_inner_morph,  SFT)
@@ -38,12 +38,12 @@ MAKE_MORPH(rpar_inner_morph,  &kp RBKT,        &kp RBRC,           CTL)
 
 
 // tap: ESC | ctrl + tap: CMD | hold: Nav layer
-MAKE_MORPH(bspc_morph,      &lt NAV ESC,     &sk RGUI,          CTL)
+MAKE_MORPH(bspc_morph,      &lt NAV ESC,     &macro_cmdk,       LS(LC(LALT)))
 // tap: space | CTRL + tap: key_repeat | hold: Num layer
-MAKE_MORPH(space_morph,       &lt NUM SPACE,   &key_repeat,          CTL)
+MAKE_MORPH(space_morph,       &lt NUM SPACE,   &kp TAB,         LS(LC(LALT)))
 
 // tap: enter | CTRL + tap: TAB | hold: Num layer
-MAKE_MORPH(enter_morph,       &lt SYM ENTER,   &kp TAB,          CTL)
+MAKE_MORPH(enter_morph,       &lt SYM ENTER,   &kp GRAVE,          CTL)
 // tap: backspace | CTRL + tap: delete | hold: Shift
 MAKE_MORPH(esc_morph,      &mt RSHFT BSPC,     &kp DEL,          CTL)
 

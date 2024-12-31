@@ -13,6 +13,7 @@
 #include "morph.dtsi"
 #include "combos.dtsi"
 #include "behaviors.dtsi"
+#include "macro.dtsi"
 
 // Some aliases
 #ifdef CONFIG_WIRELESS
@@ -72,7 +73,7 @@
             //--------------------------------------------------------------------------------------------------
             X_LM     HRML(A,        S,         D,         F,        G)        X_MM     HRMR(H,         J,        K,         L)     &comma_morph     X_RM
             //--------------------------------------------------------------------------------------------------
-            X_LB     &kp Z      &kp X      &kp C      &kp V      &kp B        X_MB     &kp N      &kp M      &quote_morph  &symbol_morph  &dot_morph  X_RB
+            X_LB     &kp Z      &kp X      &kp C      &kp V      &kp B        X_MB     &kp N      &kp M      &quote_morph  &slash_morph  &dot_morph  X_RB
             //--------------------------------------------------------------------------------------------------
             X_LH   &bspc_morph    &space_morph      X_MH     &enter_morph    &esc_morph  X_RH
             >;
@@ -102,7 +103,7 @@
             //--------------------------------------------------------------------------------------------------
             X_LB     ___        ___        ___        ___        ___          X_MB     &kp MINUS  &kp N1     &kp N2     &kp N3     ___          X_RB
             //--------------------------------------------------------------------------------------------------
-            X_LH   ___     ___      X_MH     ___      &kp N0    X_RH
+            X_LH   ___     ___      X_MH   &hml LMEH      &kp N0    X_RH
             >;
         };
 
