@@ -10,10 +10,11 @@
 
 // import extra functions
 #include "fillers.dtsi"
+#include "macro.dtsi"
 #include "morph.dtsi"
 #include "combos.dtsi"
 #include "behaviors.dtsi"
-#include "macro.dtsi"
+
 
 // Some aliases
 #ifdef CONFIG_WIRELESS
@@ -75,7 +76,7 @@
             //--------------------------------------------------------------------------------------------------
             X_LB     &kp Z      &kp X      &kp C      &kp V      &kp B        X_MB     &kp N      &kp M      &quote_morph  &slash_morph  &dot_morph  X_RB
             //--------------------------------------------------------------------------------------------------
-            X_LH   &bspc_morph    &space_morph      X_MH     &enter_morph    &esc_morph  X_RH
+            X_LH   &lt NAV ESC    &lt NUM SPACE      X_MH     &enter_morph    &bspc_morph  X_RH
             >;
         };
 
