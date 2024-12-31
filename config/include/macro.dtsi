@@ -11,4 +11,4 @@
     };
 
 
-MAKE_MACRO(macro_cmdk, '&sk LGUI &kp K &sk LGUI')                                   
+MAKE_MACRO(macro_cmdk, &sk LGUI &kp K &sk LGUI)                                   
