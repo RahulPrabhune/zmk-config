@@ -1,5 +1,5 @@
 / {
-    macros {
+    behaviors {
         macro_cmdk: macro_cmdk {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
