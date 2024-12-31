@@ -1,14 +1,14 @@
-#include "base.h"
-
-#define MAKE_MACRO(NAME, BINDING) \
-    / { \
-        behaviors { \
-            NAME: NAME { \
-                compatible = "zmk,behavior-macro"; \
-                bindings = <BINDING>; \
-            }; \
-        }; \
+/ {
+    macros {
+        macro_cmdk: macro_cmdk {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp K>
+                , <&macro_release &kp LGUI>
+                , <&macro_tap &sk LGUI>
+                ;
+        };
     };
-
-
-MAKE_MACRO(macro_cmdk, &sk LGUI &kp K &sk LGUI)                                   
+};                                  
