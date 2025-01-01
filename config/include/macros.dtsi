@@ -2,7 +2,7 @@
 
 #define MAKE_MACROS(NAME, BINDING) \
 / { \
-    behaviors { \
+    macros { \
         macro_ ## NAME: macro_ ## NAME { \
             compatible = "zmk,behavior-macro"; \
             label = #NAME; \
