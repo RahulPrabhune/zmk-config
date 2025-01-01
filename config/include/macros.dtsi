@@ -1,14 +1,18 @@
-/ {
-    macros {
-        macro_cmdk: macro_cmdk {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI>
+
+
+#define MAKE_MACROS(NAME, BINDING) \
+    / { \
+        macros { \
+            compatible = "zmk,behavior-macro"; \
+            macro_ ## NAME { \
+                #binding-cells = <0>;
+                bindings = BINDING; \
+            }; \
+        }; \
+    };
+
+MAKE_MACROS(cmdkcmd, <&macro_press &kp LGUI>
                 , <&macro_tap &kp K>
                 , <&macro_release &kp LGUI>
                 , <&macro_tap &sk LGUI>
-                ;
-        };
-    };
-};                                  
+                ;)
