@@ -2,49 +2,49 @@
 
 #include "base.h"
 
-#define MAKE_MORPH(NAME, BINDING1, BINDIGN2, MOD) \
+#define MAKE_MORPH(NAME, BINDING1, BINDING2, MOD) \
     / { \
         behaviors { \
             NAME: NAME { \
                 compatible = "zmk,behavior-mod-morph"; \
                 #binding-cells = <0>; \
-                bindings = <BINDING1>, <BINDIGN2>; \
-                mods = <(MOD_L ## MOD|MOD_R ## MOD)>; \
+                bindings = <BINDING1>, <BINDING2>; \
+                mods = <(MOD_L ## MOD | MOD_R ## MOD)>; \
             }; \
         }; \
     };
 
+
 // tap: comma | shift + tap: semicolon | ctrl + shift + tap: colon
-MAKE_MORPH(comma_morph,       &kp COMMA,       &comma_inner_morph, SFT)
-MAKE_MORPH(comma_inner_morph, &kp SEMICOLON,   &kp COLON,      CTL)
+MAKE_MORPH(comma_morph, &kp COMMA, &comma_inner_morph, SFT)
+MAKE_MORPH(comma_inner_morph, &kp SEMICOLON, &kp COLON, CTL)
 
 // tap: dot | shift + tap: ? | ctrl + shift + tap: ~
-MAKE_MORPH(dot_morph,         &kp DOT,         &dot_inner_morph,   SFT)
-MAKE_MORPH(dot_inner_morph,   &kp QMARK,       &kp TILDE,   CTL)
+MAKE_MORPH(dot_morph, &kp DOT, &dot_inner_morph, SFT)
+MAKE_MORPH(dot_inner_morph, &kp QMARK, &kp TILDE, CTL)
 
 // tap: ' | shift + tap: " | ctrl + shift + tap: `
-MAKE_MORPH(quote_morph,         &kp SQT,         &quote_inner_morph,   SFT)
-MAKE_MORPH(quote_inner_morph,   &kp DQT,       &kp GRAVE,   CTL)
+MAKE_MORPH(quote_morph, &kp SQT, &quote_inner_morph, SFT)
+MAKE_MORPH(quote_inner_morph, &kp DQT, &kp GRAVE, CTL)
 
 // tap: / | shift + tap: \ | ctrl + shift + tap: |
-MAKE_MORPH(slash_morph,    &kp FSLH,         &kp BSLH,   CTL)
+MAKE_MORPH(slash_morph, &kp FSLH, &kp BSLH, CTL)
 
 // tap: parenthesis | shift + tap: bracket | ctrl + shift + tap: brace
-MAKE_MORPH(lpar_morph,        &kp LPAR,        &lpar_inner_morph,  SFT)
-MAKE_MORPH(lpar_inner_morph,  &kp LBKT,        &kp LBRC,           CTL)
-MAKE_MORPH(rpar_morph,        &kp RPAR,        &rpar_inner_morph,  SFT)
-MAKE_MORPH(rpar_inner_morph,  &kp RBKT,        &kp RBRC,           CTL)
-
+MAKE_MORPH(lpar_morph, &kp LPAR, &lpar_inner_morph, SFT)
+MAKE_MORPH(lpar_inner_morph, &kp LBKT, &kp LBRC, CTL)
+MAKE_MORPH(rpar_morph, &kp RPAR, &rpar_inner_morph, SFT)
+MAKE_MORPH(rpar_inner_morph, &kp RBKT, &kp RBRC, CTL)
 
 // tap: enter | CTRL + tap: TAB | hold: Num layer
-MAKE_MORPH(enter_morph,       &lt SYM ENTER,   &kp GRAVE,          CTL)
-// tap: backspace | CTRL + tap: delete | hold: Shift
-MAKE_MORPH(bspc_morph,      &mt RSHFT BSPC,     &kp DEL,          CTL)
+MAKE_MORPH(enter_morph, &lt SYM ENTER, &kp GRAVE, CTL)
 
+// tap: backspace | CTRL + tap: delete | hold: Shift
+MAKE_MORPH(bspc_morph, &mt RSHFT BSPC, &kp DEL, CTL)
 
 // tap: print_screen | shift + tap: mute
 // tap: scroll lock  | shift + tap: vol down
 // tap: pause        | shift + tap: vol up
-MAKE_MORPH(print_morph,       &kp PSCRN,       &kp C_MUTE,         SFT)
-MAKE_MORPH(scrl_morph,        &kp SCLK,        &kp C_VOL_DN,       SFT)
-MAKE_MORPH(pause_morph,       &kp PAUSE_BREAK, &kp C_VOL_UP,       SFT)
+MAKE_MORPH(print_morph, &kp PSCRN, &kp C_MUTE, SFT)
+MAKE_MORPH(scrl_morph, &kp SCLK, &kp C_VOL_DN, SFT)
+MAKE_MORPH(pause_morph, &kp PAUSE_BREAK, &kp C_VOL_UP, SFT)
