@@ -15,4 +15,4 @@ MAKE_MACROS(cmdkcmd, <&macro_press &kp LGUI>
                 , <&macro_tap &kp K>
                 , <&macro_release &kp LGUI>
                 , <&macro_tap &sk LGUI>
-                ;)
+                )
