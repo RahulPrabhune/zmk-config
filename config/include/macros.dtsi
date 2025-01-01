@@ -1,14 +1,15 @@
 
 
 #define MAKE_MACROS(NAME, BINDING) \
-    / { \
-        macros { \
+/ { \
+    behaviors { \
+        macro_ ## NAME: macro_ ## NAME { \
             compatible = "zmk,behavior-macro"; \
-            macro_ ## NAME { \
-                label = #NAME; \
-                bindings = BINDING; \
-            }; \
+            label = #NAME; \
+            bindings = BINDING; \
         }; \
-    };
+    }; \
+}
+
 
 MAKE_MACROS(cmdkcmd, <&macro_press &kp LGUI &macro_tap &kp K &macro_release &kp LGUI &macro_tap &sk LGUI>)

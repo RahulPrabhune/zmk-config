@@ -38,4 +38,4 @@
 
 MAKE_COMBO(lbkt, &lpar_morph, RM1 RM2, QWE SYM)
 MAKE_COMBO(rbkt, &rpar_morph, RM2 RM3, QWE SYM)
-MAKE_COMBO(cmdk,  &cmdkcmd, LT3 LT2, QWE NAV NUM SYM SYS)
+MAKE_COMBO(cmdk,  &macro_cmdkcmd, LT3 LT2, QWE NAV NUM SYM SYS)
