@@ -12,7 +12,7 @@
 */
 
 /*
-// Layers: Qwerty, Navigation, Number, Symbol, System
+// Layers: Qwerty, Navigation, Number, qwSymbol, System
 #define QWE 0
 #define NAV 1
 #define NUM 2
@@ -38,5 +38,5 @@
 
 MAKE_COMBO(lbkt, &lpar_morph, RM1 RM2, QWE SYM)
 MAKE_COMBO(rbkt, &rpar_morph, RM2 RM3, QWE SYM)
-MAKE_COMBO(cmdkcmd,  &macro_cmdkcmd, LT3 LT2, QWE NAV NUM SYM SYS)
-MAKE_COMBO(cmdk,  &macro_cmdk, LT4 LT3, QWE NAV NUM SYM SYS)
+MAKE_COMBO(cmdkcmd,  &macro_cmdkcmd, LT1 LT2, QWE NAV NUM SYM SYS)
+MAKE_COMBO(cmdk,  &macro_cmdk, LT2 LT3, QWE NAV NUM SYM SYS)
