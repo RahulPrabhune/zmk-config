@@ -23,6 +23,10 @@ jobs:
           name: firmware
           path: firmware
 
+      - name: Delete Existing Release (if any)
+        run: |
+          gh release delete ${{ github.ref_name }} --yes || true
+
       - name: Generate Release
         uses: softprops/action-gh-release@v2
         with:
