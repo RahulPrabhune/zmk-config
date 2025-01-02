@@ -3,8 +3,10 @@ name: Build ZMK Firmware
 on:
   workflow_dispatch:
   push:
+    branches:
+      - main       # Trigger on commits to main
     tags:
-      - "*"
+      - "*"        # Trigger on tag pushes
 
 jobs:
   build:
