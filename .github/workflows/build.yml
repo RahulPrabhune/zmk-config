@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - main       # Trigger on commits to main
+      - main # Trigger on commits to main
     tags:
-      - "*"        # Trigger on tag pushes
+      - "*" # Trigger on tag pushes
 
 jobs:
   build:
@@ -17,28 +17,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Get Current Datetime
+        id: datetime
+        run: echo "datetime=$(date -u +"%Y-%m-%dT%H:%M:%SZ")" >> $GITHUB_ENV
+
       - name: Download Artifacts
         uses: actions/download-artifact@v4
         with:
-          name: firmware
+          name: firmware ${{ env.datetime }}
           path: firmware
-
-      - name: Delete Existing Release (if any)
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh release delete ${{ github.ref_name }} --yes || true
-
-      - name: Generate Release
-        uses: softprops/action-gh-release@v2
-        with:
-          token: ${{ github.token }}
-          name: Latest ZMK Firmware
-          tag_name: ${{ github.ref_name || 'latest' }}
-          fail_on_unmatched_files: false
-          draft: false
-          prerelease: false
-          files: |
-            firmware/*.hex
-            firmware/*.bin
-            firmware/*.uf2
