@@ -14,10 +14,11 @@
 /*
 // Layers: Qwerty, Navigation, Number, qwSymbol, System
 #define QWE 0
-#define NAV 1
-#define NUM 2
-#define SYM 3
-#define SYS 4
+#define WIN 1
+#define NAV 2
+#define NUM 3
+#define SYM 4
+#define SYS 5
 */
 
 #define COMBO_HOOK require-prior-idle-ms = <150>;
@@ -36,7 +37,7 @@
         }; \
     };
 
-MAKE_COMBO(lbkt, &lpar_morph, RM1 RM2, QWE SYM)
-MAKE_COMBO(rbkt, &rpar_morph, RM2 RM3, QWE SYM)
+MAKE_COMBO(lbkt, &lpar_morph, RM1 RM2, QWE WIN SYM)
+MAKE_COMBO(rbkt, &rpar_morph, RM2 RM3, QWE WIN SYM)
 MAKE_COMBO(cmdkcmd,  &macro_cmdkcmd, LT1 LT2, QWE NAV NUM SYM SYS)
 MAKE_COMBO(cmdk,  &macro_cmdk, LT2 LT3, QWE NAV NUM SYM SYS)

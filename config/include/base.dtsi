@@ -135,7 +135,7 @@
             //--------------------------------------------------------------------------------------------------
             X_LM     HRML(GRAVE,  LPAR,     LBRC,       LBKT,       LT)       X_MM     HRMR(GT,     RBKT,     RBRC,       RPAR,     TILDE)      X_RM
             //--------------------------------------------------------------------------------------------------
-           X_LB    &caps_word  &tog WIN   XXX        XXX        &kp UNDER    X_MB     &kp UNDER  &kp MINUS  XXX        XXX        XXX          X_RB
+           X_LB    &caps_word  ___   XXX        XXX        &kp UNDER    X_MB     &kp UNDER  &kp MINUS  XXX        XXX        XXX          X_RB
             //--------------------------------------------------------------------------------------------------
             X_LH  ___  &kp ESC  X_MH     ___        ___    X_RH
             >;
@@ -149,7 +149,7 @@
         //--------------------------------------------------------------------------------------------------
             X_LM     &studio_unlock        ___         ___        ___       BTLOADER     X_MM     BTLOADER   &kp F4        &kp F5        &kp F6        &kp F11          X_RM
         //--------------------------------------------------------------------------------------------------
-            X_LB     ___        ___        &bt BT_CLR  ___       &sys_reset   X_MB     &sys_reset    &kp F1   &kp F2        &kp F3        &kp F12          X_RB
+            X_LB     &lt WIN        &lt QWE        &bt BT_CLR  ___       &sys_reset   X_MB     &sys_reset    &kp F1   &kp F2        &kp F3        &kp F12          X_RB
         //--------------------------------------------------------------------------------------------------
             X_LH     ___       ___          X_MH     ___        ___     X_RH
             >;
