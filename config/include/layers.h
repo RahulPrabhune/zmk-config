@@ -3,7 +3,8 @@
 // Layers: Default, Qwerty, Navigation, Number, Symbol, System
 
 #define QWE 0
-#define NAV 1
-#define NUM 2
-#define SYM 3
-#define SYS 4
+#define WIN 1
+#define NAV 2
+#define NUM 3
+#define SYM 4
+#define SYS 5

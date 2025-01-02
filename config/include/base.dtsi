@@ -52,7 +52,14 @@
 // Home row mods macro
 // GUI -> ALT -> CTRL -> SHFT  -> HYPER    |    HYPER -> SHFT -> CTRL -> ALT -> GUI
 #define HRML(k1,k2,k3,k4,k5) &hml LGUI  k1 &hml LALT  k2 &hml LCTRL k3 &hml LSHFT k4 &hml LHYPER k5
-#define HRMR(k1,k2,k3,k4) &hmr RHYPER k1 &hmr RSHFT k2 &hmr RCTRL k3 &hmr RALT  k4
+#define HRMR(k1,k2,k3,k4,k5) &hmr RHYPER k1 &hmr RSHFT k2 &hmr RCTRL k3 &hmr RALT  k4 &hml LGUI  k5
+
+// Home row mods macro for Windows
+// CTRL -> ALT -> GUI -> SHFT  -> HYPER    |    HYPER -> SHFT -> GUI -> ALT -> CTRL
+#define WHRML(k1,k2,k3,k4,k5) &hml LCTRL k1 &hml LALT  k2 &hml LGUI k3 &hml LSHFT k4 &hml LHYPER k5
+#define WHRMR(k1,k2,k3,k4,k5) &hmr RHYPER k1 &hmr RSHFT k2 &hmr RGUI k3 &hmr RALT  k4 &hml RCTRL k5
+
+
 
 / {
     conditional_layers {
@@ -71,7 +78,20 @@
             bindings = <
             X_LT     &kp Q      &kp W      &kp E      &kp R      &kp T        X_MT     &kp Y      &kp U      &kp I      &kp O      &kp P        X_RT
             //--------------------------------------------------------------------------------------------------
-            X_LM     HRML(A,        S,         D,         F,        G)        X_MM     HRMR(H,         J,        K,         L)     &comma_morph     X_RM
+            X_LM     HRML(A,        S,         D,         F,        G)        X_MM     HRMR(H,         J,        K,         L,     &comma_morph)     X_RM
+            //--------------------------------------------------------------------------------------------------
+            X_LB     &kp Z      &kp X      &kp C      &kp V      &kp B        X_MB     &kp N      &kp M      &quote_morph  &slash_morph  &dot_morph  X_RB
+            //--------------------------------------------------------------------------------------------------
+            X_LH   NAV_ESC    NUM_SPC     X_MH     &enter_morph    &bspc_morph  X_RH
+            >;
+        };
+
+        windows_layer {
+            display-name = "WIN";
+            bindings = <
+            X_LT     &kp Q      &kp W      &kp E      &kp R      &kp T        X_MT     &kp Y      &kp U      &kp I      &kp O      &kp P        X_RT
+            //--------------------------------------------------------------------------------------------------
+            X_LM     WHRML(A,        S,         D,         F,        G)        X_MM     WHRMR(H,         J,        K,         L,     &comma_morph)     X_RM
             //--------------------------------------------------------------------------------------------------
             X_LB     &kp Z      &kp X      &kp C      &kp V      &kp B        X_MB     &kp N      &kp M      &quote_morph  &slash_morph  &dot_morph  X_RB
             //--------------------------------------------------------------------------------------------------
@@ -115,7 +135,7 @@
             //--------------------------------------------------------------------------------------------------
             X_LM     HRML(GRAVE,  LPAR,     LBRC,       LBKT,       LT)       X_MM     HRMR(GT,     RBKT,     RBRC,       RPAR)     &kp TILDE      X_RM
             //--------------------------------------------------------------------------------------------------
-           X_LB    &caps_word  &tog QWE   XXX        XXX        &kp UNDER    X_MB     &kp UNDER  &kp MINUS  XXX        XXX        XXX          X_RB
+           X_LB    &caps_word  &tog WIN   XXX        XXX        &kp UNDER    X_MB     &kp UNDER  &kp MINUS  XXX        XXX        XXX          X_RB
             //--------------------------------------------------------------------------------------------------
             X_LH  ___  &kp ESC  X_MH     ___        ___    X_RH
             >;
