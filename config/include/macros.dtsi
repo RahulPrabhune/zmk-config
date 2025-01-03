@@ -19,7 +19,7 @@
                 , <&macro_release &kp LGUI>
                 ;
         };
-        macro_ctlkctl: macro_cmdkcmd {
+        macro_ctlkctl: macro_ctlkctl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
