@@ -19,6 +19,52 @@
                 , <&macro_release &kp LGUI>
                 ;
         };
+        macro_ctlkctl: macro_cmdkcmd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTL>
+                , <&macro_tap &kp K>
+                , <&macro_release &kp LCTL>
+                , <&macro_tap &sk LCTL>
+                ;
+        };
+        macro_ctlk: macro_ctlk {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTL>
+                , <&macro_tap &kp K>
+                , <&macro_release &kp LCTL>
+                ;
+        };
+        macro_cmdTab: macro_cmdTab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp TAB>
+                , <&macro_release &kp LGUI>
+                ;
+        };
+        macro_ctlTab: macro_ctlTab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTL>
+                , <&macro_tap &kp TAB>
+                , <&macro_release &kp LCTL>
+                ;
+        };
+        macro_altTab: macro_altTab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp TAB>
+                , <&macro_release &kp LALT>
+                ;
+        };
     };
 };                                  
 

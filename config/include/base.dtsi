@@ -56,7 +56,7 @@
 
 // Home row mods macro for Windows
 // CTRL -> ALT -> GUI -> SHFT  -> HYPER    |    HYPER -> SHFT -> GUI -> ALT -> CTRL
-#define WHRML(k1,k2,k3,k4,k5) &hml LCTRL k1 &hml LALT  k2 &hml LGUI k3 &hml LSHFT k4 &hml LHYPER k5
+#define WHRML(k1,k2,k3,k4,k5) &hml LCTRL k1 &hml LALT  k2 &hml LCTRL k3 &hml LSHFT k4 &hml LHYPER k5
 #define WHRMR(k1,k2,k3,k4,k5) &hmr RHYPER k1 &hmr RSHFT k2 &hmr RGUI k3 &hmr RALT  k4 &hml RCTRL k5
 
 
