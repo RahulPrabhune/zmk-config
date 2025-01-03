@@ -78,6 +78,18 @@
             bindings = <
             X_LT     &kp Q      &kp W      &kp E      &kp R      &kp T        X_MT     &kp Y      &kp U      &kp I      &kp O      &kp P        X_RT
             //--------------------------------------------------------------------------------------------------
+            X_LM     &trans      &trans     &trans     &trans    &trans        X_MM     &trans      &trans     &trans     &trans    &trans     X_RM
+            //--------------------------------------------------------------------------------------------------
+            X_LB     &kp Z      &kp X      &kp C      &kp V      &kp B        X_MB     &kp N      &kp M      &quote_morph  &slash_morph  &dot_morph  X_RB
+            //--------------------------------------------------------------------------------------------------
+            X_LH   NAV_ESC    NUM_SPC     X_MH     &enter_morph    &bspc_morph  X_RH
+            >;
+        };
+        mac_layer {
+            display-name = "MAC";
+            bindings = <
+            X_LT     &kp Q      &kp W      &kp E      &kp R      &kp T        X_MT     &kp Y      &kp U      &kp I      &kp O      &kp P        X_RT
+            //--------------------------------------------------------------------------------------------------
             X_LM     HRML(A,        S,         D,         F,        G)        X_MM     HRMR(H,         J,        K,         L,     &comma_morph)     X_RM
             //--------------------------------------------------------------------------------------------------
             X_LB     &kp Z      &kp X      &kp C      &kp V      &kp B        X_MB     &kp N      &kp M      &quote_morph  &slash_morph  &dot_morph  X_RB
@@ -89,7 +101,7 @@
         windows_layer {
             display-name = "WIN";
             bindings = <
-            X_LT     &kp Q      &kp W      &kp E      &kp R      &kp T        X_MT     &kp Y      &kp U      &kp I      &kp O      &kp P        X_RT
+            X_LT     &kp Q     &kp W      &kp E      &kp R      &kp T        X_MT     &kp Y      &kp U      &kp I      &kp O      &kp P        X_RT
             //--------------------------------------------------------------------------------------------------
             X_LM     WHRML(A,        S,         D,         F,        G)        X_MM     WHRMR(H,         J,        K,         L,     &comma_morph)     X_RM
             //--------------------------------------------------------------------------------------------------
@@ -107,7 +119,7 @@
             //--------------------------------------------------------------------------------------------------
             X_LM     &sk LGUI   &sk LALT   &sk LCTRL  &sk LSHFT  ___          X_MM     ___        &kp LEFT   NAV_DOWN   &kp RIGHT  &kp GRAVE    X_RM
             //--------------------------------------------------------------------------------------------------
-            X_LB     ___        ___        ___        ___        ___          X_MB     &kp PG_DN  &kp END    ___        ___        ___          X_RB
+            X_LB     &to MAC     &to WIN        ___        ___        ___          X_MB     &kp PG_DN  &kp END    ___        ___        ___          X_RB
             //--------------------------------------------------------------------------------------------------
             X_LH    ___        ___    X_MH    &kp TAB    &kp TAB   X_RH
             >;
@@ -149,7 +161,7 @@
             //--------------------------------------------------------------------------------------------------
                 X_LM     &studio_unlock        ___         ___        ___       BTLOADER     X_MM     BTLOADER   &kp F4        &kp F5        &kp F6        &kp F11          X_RM
             //--------------------------------------------------------------------------------------------------
-                X_LB     &to QWE         &to WIN         &bt BT_CLR  ___       &sys_reset   X_MB     &sys_reset    &kp F1   &kp F2        &kp F3        &kp F12          X_RB
+                X_LB      ___       ___       &bt BT_CLR  ___       &sys_reset   X_MB     &sys_reset    &kp F1   &kp F2        &kp F3        &kp F12          X_RB
             //--------------------------------------------------------------------------------------------------
                 X_LH     ___       ___          X_MH     ___        ___     X_RH
             >;
