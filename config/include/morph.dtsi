@@ -15,9 +15,8 @@
     };
 
 
-// tap: comma | shift + tap: semicolon | ctrl + shift + tap: colon
-MAKE_MORPH(comma_morph, &kp COMMA, &comma_inner_morph, SFT)
-MAKE_MORPH(comma_inner_morph, &kp SEMICOLON, &kp COLON, CTL)
+// tap: comma | shift + tap: semicolon
+MAKE_MORPH(comma_morph, &kp COMMA, &kp SEMICOLON, SFT)
 
 // tap: dot | shift + tap: ? | ctrl + shift + tap: ~
 MAKE_MORPH(dot_morph, &kp DOT, &dot_inner_morph, SFT)

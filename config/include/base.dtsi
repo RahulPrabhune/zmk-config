@@ -52,12 +52,12 @@
 // Home row mods macro
 // GUI -> ALT -> CTRL -> SHFT  -> HYPER    |    HYPER -> SHFT -> CTRL -> ALT -> GUI
 #define HRML(k1,k2,k3,k4,k5) &hml LGUI  k1 &hml LALT  k2 &hml LCTRL k3 &hml LSHFT k4 &hml LHYPER k5
-#define HRMR(k1,k2,k3,k4,k5) &hmr RHYPER k1 &hmr RSHFT k2 &hmr RCTRL k3 &hmr RALT  k4 &hml LGUI  k5
+#define HRMR(k1,k2,k3,k4,k5) &hmr RHYPER k1 &hmr RSHFT k2 &hmr RCTRL k3 &hmr RALT  k4 &hmr LGUI  k5
 
 // Home row mods macro for Windows
 // CTRL -> ALT -> GUI -> SHFT  -> HYPER    |    HYPER -> SHFT -> GUI -> ALT -> CTRL
 #define WHRML(k1,k2,k3,k4,k5) &hml LCTRL k1 &hml LALT  k2 &hml LCTRL k3 &hml LSHFT k4 &hml LHYPER k5
-#define WHRMR(k1,k2,k3,k4,k5) &hmr RHYPER k1 &hmr RSHFT k2 &hmr RGUI k3 &hmr RALT  k4 &hml RCTRL k5
+#define WHRMR(k1,k2,k3,k4,k5) &hmr RHYPER k1 &hmr RSHFT k2 &hmr RGUI k3 &hmr RALT  k4 &hmr RCTRL k5
 
 
 
@@ -78,7 +78,7 @@
             bindings = <
             X_LT     &kp Q      &kp W      &kp E      &kp R      &kp T        X_MT     &kp Y      &kp U      &kp I      &kp O      &kp P        X_RT
             //--------------------------------------------------------------------------------------------------
-            X_LM     &trans      &trans     &trans     &trans    &trans        X_MM     &trans      &trans     &trans     &trans    &comma_morph     X_RM
+            X_LM     &trans      &trans     &trans     &trans    &trans        X_MM     &trans      &trans     &trans     &trans    &trans     X_RM                 
             //--------------------------------------------------------------------------------------------------
             X_LB     &kp Z      &kp X      &kp C      &kp V      &kp B        X_MB     &kp N      &kp M      &quote_morph  &slash_morph  &dot_morph  X_RB
             //--------------------------------------------------------------------------------------------------
@@ -121,7 +121,7 @@
             //--------------------------------------------------------------------------------------------------
             X_LB     &to MAC     &to WIN        ___        ___        ___          X_MB     &kp PG_DN  &kp END    ___        ___        ___          X_RB
             //--------------------------------------------------------------------------------------------------
-            X_LH    ___        ___    X_MH    &kp TAB    &kp TAB   X_RH
+            X_LH    ___        ___    X_MH    &kp Tab     &sk RMEH   X_RH
             >;
         };
 
@@ -133,9 +133,9 @@
             //--------------------------------------------------------------------------------------------------
             X_LM     ___        ___        ___        ___        ___          X_MM     &dot_morph &kp N4     &kp N5     &kp N6     &kp SEMI     X_RM
             //--------------------------------------------------------------------------------------------------
-            X_LB     ___        ___        ___        ___        ___          X_MB     &kp MINUS  &kp N1     &kp N2     &kp N3     ___          X_RB
+            X_LB     ___        ___        ___        ___        ___          X_MB     &kp MINUS  &kp N1     &kp N2     &kp N3     &kp N0          X_RB
             //--------------------------------------------------------------------------------------------------
-            X_LH   ___     ___      X_MH   ___      &kp N0    X_RH
+            X_LH   &kp TAB     ___      X_MH   ___      &bspc_morph    X_RH
             >;
         };
 
@@ -149,7 +149,7 @@
             //--------------------------------------------------------------------------------------------------
            X_LB    &caps_word  XXX   XXX        XXX        &kp UNDER    X_MB     &kp UNDER  &kp MINUS  XXX        XXX        XXX          X_RB
             //--------------------------------------------------------------------------------------------------
-            X_LH  ___  &kp ESC  X_MH     ___        ___    X_RH
+            X_LH  &sk RMEH  &kp ESC  X_MH     ___        ___    X_RH
             >;
         };
 

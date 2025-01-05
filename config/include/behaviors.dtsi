@@ -47,13 +47,13 @@ MAKE_HRM(hmr, KEYS_L THUMBS)
     quick-tap-ms = <QUICK_TAP_MS>;
 };
 
-// Alt+Tab swapper
+// LGUI+Tab swapper
 / {
     behaviors {
         swapper: swapper {
             compatible = "zmk,behavior-tri-state";
             #binding-cells = <0>;
-            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+            bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
         };
     };
 };
