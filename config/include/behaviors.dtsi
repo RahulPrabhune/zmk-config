@@ -70,5 +70,15 @@ MAKE_HRM(hmr, KEYS_L THUMBS)
             #binding-cells = <0>;
             bindings = <&kt LCTRL>, <&kp TAB>, <&kt LCTRL>;
         };
+        bt0: bt0 {
+            compatible = "zmk,behavior-tri-state";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0>, <&tog MAC>;
+        };
+        bt4: bt4 {
+            compatible = "zmk,behavior-tri-state";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 4>, <&tog WIN>;
+        };
     };
 };
