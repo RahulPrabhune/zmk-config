@@ -38,14 +38,6 @@
                 , <&macro_release &kp LCTL>
                 ;
         };
-        macro_shifttab: macro_shifttab {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &sk LSHFT>
-                , <&macro_tap &kp TAB>
-                ;
-        };
     };
 };                                  
 
