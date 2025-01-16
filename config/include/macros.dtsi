@@ -38,31 +38,12 @@
                 , <&macro_release &kp LCTL>
                 ;
         };
-        macro_cmdTab: macro_cmdTab {
+        macro_shifttab: macro_shifttab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LGUI>
+                = <&macro_press &sk LSHFT>
                 , <&macro_tap &kp TAB>
-                , <&macro_release &kp LGUI>
-                ;
-        };
-        macro_ctlTab: macro_ctlTab {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTL>
-                , <&macro_tap &kp TAB>
-                , <&macro_release &kp LCTL>
-                ;
-        };
-        macro_altTab: macro_altTab {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LALT>
-                , <&macro_tap &kp TAB>
-                , <&macro_release &kp LALT>
                 ;
         };
     };

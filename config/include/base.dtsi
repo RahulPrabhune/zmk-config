@@ -78,7 +78,7 @@
             bindings = <
             X_LT     &kp Q      &kp W      &kp E      &kp R      &kp T        X_MT     &kp Y      &kp U      &kp I      &kp O      &kp P        X_RT
             //--------------------------------------------------------------------------------------------------
-            X_LM     &trans      &trans     &trans     &trans    &trans        X_MM     &trans      &trans     &trans     &trans    &trans     X_RM                 
+            X_LM     &trans      &trans     &trans     &trans    &trans        X_MM     &trans      &trans     &trans     &trans    &trans     X_RM                
             //--------------------------------------------------------------------------------------------------
             X_LB     &kp Z      &kp X      &kp C      &kp V      &kp B        X_MB     &kp N      &kp M      &quote_morph  &slash_morph  &dot_morph  X_RB
             //--------------------------------------------------------------------------------------------------
@@ -90,7 +90,7 @@
             bindings = <
             X_LT     &kp Q      &kp W      &kp E      &kp R      &kp T        X_MT     &kp Y      &kp U      &kp I      &kp O      &kp P        X_RT
             //--------------------------------------------------------------------------------------------------
-            X_LM     HRML(A,        S,         D,         F,        G)        X_MM     HRMR(H,         J,        K,         L,     &comma_morph)     X_RM
+            X_LM     HRML(A,        S,         D,         F,        G)        X_MM     HRMR(H,         J,        K,         L,     comma_morph)     X_RM
             //--------------------------------------------------------------------------------------------------
             X_LB     &kp Z      &kp X      &kp C      &kp V      &kp B        X_MB     &kp N      &kp M      &quote_morph  &slash_morph  &dot_morph  X_RB
             //--------------------------------------------------------------------------------------------------
@@ -103,7 +103,7 @@
             bindings = <
             X_LT     &kp Q     &kp W      &kp E      &kp R      &kp T        X_MT     &kp Y      &kp U      &kp I      &kp O      &kp P        X_RT
             //--------------------------------------------------------------------------------------------------
-            X_LM     WHRML(A,        S,         D,         F,        G)        X_MM     WHRMR(H,         J,        K,         L,     &comma_morph)     X_RM
+            X_LM     WHRML(A,        S,         D,         F,        G)        X_MM     WHRMR(H,         J,        K,         L,     comma_morph)     X_RM
             //--------------------------------------------------------------------------------------------------
             X_LB     &kp Z      &kp X      &kp C      &kp V      &kp B        X_MB     &kp N      &kp M      &quote_morph  &slash_morph  &dot_morph  X_RB
             //--------------------------------------------------------------------------------------------------
@@ -115,7 +115,7 @@
             display-name = "NAV";
             bindings = <
             //--------------------------------------------------------------------------------------------------
-            X_LT     ___        ___        ___        &swapper   ___          X_MT     &kp PG_UP  &kp HOME   NAV_UP     ___        NAV_DEL      X_RT
+            X_LT     &altswapper        ___        &ctrlswapper        &cmdswapper   &graveswapper          X_MT     &kp PG_UP  &kp HOME   NAV_UP     ___        NAV_DEL      X_RT
             //--------------------------------------------------------------------------------------------------
             X_LM     &sk LGUI   &sk LALT   &sk LCTRL  &sk LSHFT  ___          X_MM     ___        &kp LEFT   NAV_DOWN   &kp RIGHT  &kp GRAVE    X_RM
             //--------------------------------------------------------------------------------------------------
