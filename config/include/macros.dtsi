@@ -4,38 +4,38 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RGUI>
+                = <&macro_press &kp LGUI>
                 , <&macro_tap &kp K>
-                , <&macro_release &kp RGUI>
-                , <&macro_tap &sk RGUI>
+                , <&macro_release &kp LGUI>
+                , <&macro_tap &sk LGUI>
                 ;
         };
         macro_cmdk: macro_cmdk {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RGUI>
+                = <&macro_press &kp LGUI>
                 , <&macro_tap &kp K>
-                , <&macro_release &kp RGUI>
+                , <&macro_release &kp LGUI>
                 ;
         };
         macro_ctlkctl: macro_ctlkctl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTL>
+                = <&macro_press &kp LCTL>
                 , <&macro_tap &kp K>
-                , <&macro_release &kp RCTL>
-                , <&macro_tap &sk RCTL>
+                , <&macro_release &kp LCTL>
+                , <&macro_tap &sk LCTL>
                 ;
         };
         macro_ctlk: macro_ctlk {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RCTL>
+                = <&macro_press &kp LCTL>
                 , <&macro_tap &kp K>
-                , <&macro_release &kp RCTL>
+                , <&macro_release &kp LCTL>
                 ;
         };
         macro_line1: macro_line1 {
