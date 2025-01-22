@@ -82,7 +82,7 @@
             //--------------------------------------------------------------------------------------------------
             X_LB     &kp Z      &kp X      &kp C      &kp V      &kp B        X_MB     &kp N      &kp M      &quote_morph  &slash_morph  &dot_morph  X_RB
             //--------------------------------------------------------------------------------------------------
-            X_LH   NAV_ESC    NUM_SPC     X_MH     &lt SYM ENTER    &bspc_morph  X_RH
+            X_LH   NAV_ESC    NUM_SPC     X_MH     &sl SYM ENTER    &bspc_morph  X_RH
             >;
         };
         mac_layer {
@@ -115,9 +115,9 @@
             display-name = "NAV";
             bindings = <
             //--------------------------------------------------------------------------------------------------
-            X_LT     &altswapper        ___        &ctrlswapper        &cmdswapper   &graveswapper          X_MT     &kp PG_UP  &kp HOME   NAV_UP     ___        NAV_DEL      X_RT
+            X_LT     &altswapper        &key_repeat        &ctrlswapper        &cmdswapper   &graveswapper          X_MT     &kp PG_UP  &kp HOME   NAV_UP     ___        NAV_DEL      X_RT
             //--------------------------------------------------------------------------------------------------
-            X_LM     &sk LGUI   &sk LALT   &sk LCTRL  &sk LSHFT  ___          X_MM     ___        &kp LEFT   NAV_DOWN   &kp RIGHT  &kp GRAVE    X_RM
+            X_LM     &sk LGUI   &sk LALT   &kp COLON  &kp SEMI  ___          X_MM     ___        &kp LEFT   NAV_DOWN   &kp RIGHT  &kp GRAVE    X_RM
             //--------------------------------------------------------------------------------------------------
             X_LB     &to MAC     &to WIN        &bt0       &bt4        ___          X_MB     &kp PG_DN  &kp END    ___        ___        ___          X_RB
             //--------------------------------------------------------------------------------------------------
@@ -131,11 +131,11 @@
             //--------------------------------------------------------------------------------------------------
             X_LT     ___        ___        ___        ___        ___          X_MT     &kp PLUS   &kp N7     &kp N8     &kp N9     &kp EQUAL    X_RT
             //--------------------------------------------------------------------------------------------------
-            X_LM     ___        ___        ___        ___        ___          X_MM     &dot_morph &kp N4     &kp N5     &kp N6     &kp SEMI     X_RM
+            X_LM     ___        ___        ___        ___        ___          X_MM     &dot_morph &hlm &macro_line4 N4     &kp N5     &kp N6     &kp SEMI     X_RM
             //--------------------------------------------------------------------------------------------------
             X_LB     ___        ___        ___        ___        ___          X_MB     &kp MINUS  &kp N1     &kp N2     &kp N3     &kp N0          X_RB
             //--------------------------------------------------------------------------------------------------
-            X_LH   &kp TAB     ___      X_MH   ___      &bspc_morph    X_RH
+            X_LH   &kp TAB     ___      X_MH   &kp LT      &bspc_morph    X_RH
             >;
         };
 
@@ -145,11 +145,11 @@
             //--------------------------------------------------------------------------------------------------
             X_LT     &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT    X_MT     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR   &kp RPAR     X_RT
             //--------------------------------------------------------------------------------------------------
-            X_LM     HRML(GRAVE,  LPAR,     LBRC,       LBKT,       LT)       X_MM     HRMR(GT,     RBKT,     RBRC,       RPAR,     TILDE)      X_RM
+            X_LM     HRML(GRAVE,  LPAR,     LBRC,       LBKT,       LT)       X_MM     ___     ___     ___      ___     &kp COLON      X_RM
             //--------------------------------------------------------------------------------------------------
-           X_LB    &caps_word  XXX   XXX        XXX        &kp UNDER    X_MB     &kp UNDER  &kp MINUS  XXX        XXX        XXX          X_RB
+           X_LB    &caps_word  XXX   XXX        XXX        &kp UNDER    X_MB     &kp UNDER  &kp MINUS  &kp DQT        XXX        XXX          X_RB
             //--------------------------------------------------------------------------------------------------
-            X_LH  &sk RMEH  &kp ESC  X_MH     ___        ___    X_RH
+            X_LH  &sk RMEH  &kp GT  X_MH     ___        ___    X_RH
             >;
         };
 
