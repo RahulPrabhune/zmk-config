@@ -4,47 +4,47 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LGUI>
+                = <&macro_press &kp RGUI>
                 , <&macro_tap &kp K>
-                , <&macro_release &kp LGUI>
-                , <&macro_tap &sk LGUI>
+                , <&macro_release &kp RGUI>
+                , <&macro_tap &sk RGUI>
                 ;
         };
         macro_cmdk: macro_cmdk {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LGUI>
+                = <&macro_press &kp RGUI>
                 , <&macro_tap &kp K>
-                , <&macro_release &kp LGUI>
+                , <&macro_release &kp RGUI>
                 ;
         };
         macro_ctlkctl: macro_ctlkctl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTL>
+                = <&macro_press &kp RCTL>
                 , <&macro_tap &kp K>
-                , <&macro_release &kp LCTL>
-                , <&macro_tap &sk LCTL>
+                , <&macro_release &kp RCTL>
+                , <&macro_tap &sk RCTL>
                 ;
         };
         macro_ctlk: macro_ctlk {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTL>
+                = <&macro_press &kp RCTL>
                 , <&macro_tap &kp K>
-                , <&macro_release &kp LCTL>
+                , <&macro_release &kp RCTL>
                 ;
         };
         macro_line1: macro_line1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTL>
+                = <&macro_press &kp RCTL>
                 , <&macro_tap &kp G>
-                , <&macro_release &kp LCTL>
+                , <&macro_release &kp RCTL>
                 , <&macro_tap &kp N1>
                 ;
         };
@@ -52,9 +52,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTL>
+                = <&macro_press &kp RCTL>
                 , <&macro_tap &kp G>
-                , <&macro_release &kp LCTL>
+                , <&macro_release &kp RCTL>
                 , <&macro_tap &kp N2>
                 ;
         };
@@ -62,9 +62,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTL>
+                = <&macro_press &kp RCTL>
                 , <&macro_tap &kp G>
-                , <&macro_release &kp LCTL>
+                , <&macro_release &kp RCTL>
                 , <&macro_tap &kp N3>
                 ;
         };
@@ -72,9 +72,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTL>
+                = <&macro_press &kp RCTL>
                 , <&macro_tap &kp G>
-                , <&macro_release &kp LCTL>
+                , <&macro_release &kp RCTL>
                 , <&macro_tap &kp N4>
                 ;
         };
@@ -82,9 +82,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTL>
+                = <&macro_press &kp RCTL>
                 , <&macro_tap &kp G>
-                , <&macro_release &kp LCTL>
+                , <&macro_release &kp RCTL>
                 , <&macro_tap &kp N5>
                 ;
         };
@@ -92,9 +92,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTL>
+                = <&macro_press &kp RCTL>
                 , <&macro_tap &kp G>
-                , <&macro_release &kp LCTL>
+                , <&macro_release &kp RCTL>
                 , <&macro_tap &kp N6>
                 ;
         };
@@ -102,9 +102,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTL>
+                = <&macro_press &kp RCTL>
                 , <&macro_tap &kp G>
-                , <&macro_release &kp LCTL>
+                , <&macro_release &kp RCTL>
                 , <&macro_tap &kp N7>
                 ;
         };
@@ -112,9 +112,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTL>
+                = <&macro_press &kp RCTL>
                 , <&macro_tap &kp G>
-                , <&macro_release &kp LCTL>
+                , <&macro_release &kp RCTL>
                 , <&macro_tap &kp N8>
                 ;
         };
@@ -122,9 +122,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTL>
+                = <&macro_press &kp RCTL>
                 , <&macro_tap &kp G>
-                , <&macro_release &kp LCTL>
+                , <&macro_release &kp RCTL>
                 , <&macro_tap &kp N9>
                 ;
         };
