@@ -82,7 +82,7 @@
             //--------------------------------------------------------------------------------------------------
             X_LB     &kp Z      &kp X      &kp C      &kp V      &kp B        X_MB     &kp N      &kp M      &quote_morph  &slash_morph  &dot_morph  X_RB
             //--------------------------------------------------------------------------------------------------
-            X_LH   NAV_ESC    NUM_SPC     X_MH     &sl SYM ENTER    &bspc_morph  X_RH
+            X_LH   NAV_ESC    NUM_SPC     X_MH     &lt SYM ENTER    &bspc_morph  X_RH
             >;
         };
         mac_layer {
