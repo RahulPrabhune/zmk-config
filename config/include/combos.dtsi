@@ -41,6 +41,10 @@
 MAKE_COMBO(lbkt, &lpar_morph, RM1 RM2, QWE MAC WIN SYM)
 MAKE_COMBO(rbkt, &rpar_morph, RM2 RM3, QWE MAC WIN SYM)
 
+MAKE_COMBO(cmdkcmd,  &macro_cmdkcmd, LT1 LT2, MAC)
+MAKE_COMBO(cmdk,  &macro_cmdk, LT2 LT3, MAC)
+MAKE_COMBO(ctlkctl,  &macro_ctlkctl, LT1 LT2, WIN)
+MAKE_COMBO(ctlk,  &macro_ctlk, LT2 LT3, WIN)
 
 MAKE_COMBO(tab,  &kp TAB, RT1 RT2, QWE MAC WIN SYM)
 MAKE_COMBO(esc,  &kp ESC, RT2 RT3, QWE MAC WIN SYM)
