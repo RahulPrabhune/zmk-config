@@ -41,7 +41,6 @@
 
 //      layer       aliases
 #define NAV_ESC     &lt NAV ESC
-#define NUM_SPC     &lt NUM SPACE 
 
 //      some        functions
 #define LH(key)     LS(LC(LA(LG(key))))
@@ -82,7 +81,7 @@
             //--------------------------------------------------------------------------------------------------
             X_LB     &kp Z      &kp X      &kp C      &kp V      &kp B        X_MB     &kp N      &kp M      &quote_morph  &slash_morph  &dot_morph  X_RB
             //--------------------------------------------------------------------------------------------------
-            X_LH   NAV_ESC    NUM_SPC     X_MH     &lt SYM ENTER    &bspc_morph  X_RH
+            X_LH   NAV_ESC    &lt SYM SPACE     X_MH     &lt NUM ENTER    &bspc_morph  X_RH
             >;
         };
         mac_layer {
@@ -94,7 +93,7 @@
             //--------------------------------------------------------------------------------------------------
             X_LB     &kp Z      &kp X      &kp C      &kp V      &kp B        X_MB     &kp N      &kp M      &quote_morph  &slash_morph  &dot_morph  X_RB
             //--------------------------------------------------------------------------------------------------
-            X_LH   NAV_ESC    NUM_SPC     X_MH     &lt SYM ENTER    &bspc_morph  X_RH
+            X_LH   NAV_ESC    &lt SYM SPACE     X_MH     &lt NUM ENTER    &bspc_morph  X_RH
             >;
         };
 
@@ -107,7 +106,7 @@
             //--------------------------------------------------------------------------------------------------
             X_LB     &kp Z      &kp X      &kp C      &kp V      &kp B        X_MB     &kp N      &kp M      &quote_morph  &slash_morph  &dot_morph  X_RB
             //--------------------------------------------------------------------------------------------------
-            X_LH   NAV_ESC    NUM_SPC     X_MH     &lt SYM ENTER    &bspc_morph  X_RH
+            X_LH   NAV_ESC    &lt SYM SPACE     X_MH     &lt NUM ENTER    &bspc_morph  X_RH
             >;
         };
 
