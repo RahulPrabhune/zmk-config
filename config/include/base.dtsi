@@ -144,7 +144,7 @@
             //--------------------------------------------------------------------------------------------------
             X_LT     &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT    X_MT     &kp CARET  &macro_line7   &macro_line8  &macro_line9   &kp RPAR     X_RT
             //--------------------------------------------------------------------------------------------------
-            X_LM     HRML(GRAVE,  LPAR,     LBRC,       DQT,       LT)       X_MM     ___    &macro_line4   &macro_line5      &macro_line6     &kp COLON      X_RM
+            X_LM     HRML(GRAVE,  LPAR,     LBRC,       LBKT,       LT)       X_MM     ___    &macro_line4   &macro_line5      &macro_line6     &kp COLON      X_RM
             //--------------------------------------------------------------------------------------------------
            X_LB    &caps_word  XXX   XXX        XXX        &kp UNDER    X_MB     &kp UNDER  &macro_line1   &macro_line2    &macro_line3        XXX          X_RB
             //--------------------------------------------------------------------------------------------------
