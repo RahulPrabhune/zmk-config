@@ -116,7 +116,7 @@
             //--------------------------------------------------------------------------------------------------
             X_LT     &altswapper        ___        &ctrlswapper        &cmdswapper   &graveswapper          X_MT     &kp PG_UP  &kp HOME   NAV_UP     ___        NAV_DEL      X_RT
             //--------------------------------------------------------------------------------------------------
-            X_LM     &sk LGUI   &sk LALT  &kp COLON  &kp SEMI  ___          X_MM     ___        &kp LEFT   NAV_DOWN   &kp RIGHT  &kp GRAVE    X_RM
+            X_LM     &sk LGUI   &sk LALT  ___   ___    ___          X_MM     ___        &kp LEFT   NAV_DOWN   &kp RIGHT  &kp GRAVE    X_RM
             //--------------------------------------------------------------------------------------------------
             X_LB     &to MAC     &to WIN        &bt0       &bt4        ___          X_MB     &kp PG_DN  &kp END    ___        ___        ___          X_RB
             //--------------------------------------------------------------------------------------------------
@@ -137,12 +137,12 @@
             X_LH   &kp TAB     ___      X_MH   &kp LT      &bspc_morph    X_RH
             >;
         };
-
+e
         symbol_layer {
             display-name = "SYM";
             bindings = <
             //--------------------------------------------------------------------------------------------------
-            X_LT     &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT    X_MT     &kp CARET  &macro_line7   &macro_line8  &macro_line9   &kp RPAR     X_RT
+            X_LT     &kp COLON   &kp AT    &kp DQT  &kp SEMI   &kp PRCNT    X_MT     &kp CARET  &macro_line7   &macro_line8  &macro_line9   &kp RPAR     X_RT
             //--------------------------------------------------------------------------------------------------
             X_LM     HRML(GRAVE,  LPAR,     LBRC,       LBKT,       LT)       X_MM     ___    &macro_line4   &macro_line5      &macro_line6     &kp COLON      X_RM
             //--------------------------------------------------------------------------------------------------
