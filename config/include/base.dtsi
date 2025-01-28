@@ -137,7 +137,7 @@
             X_LH   &kp TAB     ___      X_MH   &kp LT      &bspc_morph    X_RH
             >;
         };
-e
+        
         symbol_layer {
             display-name = "SYM";
             bindings = <
