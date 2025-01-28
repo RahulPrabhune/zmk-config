@@ -39,9 +39,6 @@
 #define NAV_UP      &mt LC(HOME) UP
 #define STUDIO      &studio_unlock
 
-//      layer       aliases
-#define NAV_ESC     &lt NAV ESC
-
 //      some        functions
 #define LH(key)     LS(LC(LA(LG(key))))
 #define LM(key)     LS(LC(LA(key)))
@@ -81,7 +78,7 @@
             //--------------------------------------------------------------------------------------------------
             X_LB     &kp Z      &kp X      &kp C      &kp V      &kp B        X_MB     &kp N      &kp M      &quote_morph  &slash_morph  &dot_morph  X_RB
             //--------------------------------------------------------------------------------------------------
-            X_LH   NAV_ESC    &lt SYM SPACE     X_MH     &lt NUM ENTER    &bspc_morph  X_RH
+            X_LH   &sk LSHFT    &lt SYM SPACE     X_MH     &lt NUM ENTER    &bspc_morph  X_RH
             >;
         };
         mac_layer {
@@ -93,7 +90,7 @@
             //--------------------------------------------------------------------------------------------------
             X_LB     &kp Z      &kp X      &kp C      &kp V      &kp B        X_MB     &kp N      &kp M      &quote_morph  &slash_morph  &dot_morph  X_RB
             //--------------------------------------------------------------------------------------------------
-            X_LH   NAV_ESC    &lt SYM SPACE     X_MH     &lt NUM ENTER    &bspc_morph  X_RH
+            X_LH   &sk LSHFT    &lt SYM SPACE     X_MH     &lt NUM ENTER    &bspc_morph  X_RH
             >;
         };
 
@@ -106,7 +103,7 @@
             //--------------------------------------------------------------------------------------------------
             X_LB     &kp Z      &kp X      &kp C      &kp V      &kp B        X_MB     &kp N      &kp M      &quote_morph  &slash_morph  &dot_morph  X_RB
             //--------------------------------------------------------------------------------------------------
-            X_LH   NAV_ESC    &lt SYM SPACE     X_MH     &lt NUM ENTER    &bspc_morph  X_RH
+            X_LH   &sk LSHFT   &lt SYM SPACE     X_MH     &lt NUM ENTER    &bspc_morph  X_RH
             >;
         };
 
@@ -142,11 +139,11 @@
             display-name = "SYM";
             bindings = <
             //--------------------------------------------------------------------------------------------------
-            X_LT     &kp COLON   &kp AT    &kp DQT  &kp SEMI   &kp PRCNT    X_MT     &kp CARET  &macro_line7   &macro_line8  &macro_line9   &kp RPAR     X_RT
+            X_LT     &kp COLON   &kp AT    &kp DQT  &kp SEMI   &kp PRCNT    X_MT     &kp CARET  &kp AMPS   &kp STAR   &kp BACKSLASH   &kp RPAR     X_RT
             //--------------------------------------------------------------------------------------------------
-            X_LM     HRML(GRAVE,  LPAR,     LBRC,       LBKT,       LT)       X_MM     ___    &macro_line4   &macro_line5      &macro_line6     &kp COLON      X_RM
+            X_LM     HRML(GRAVE,  LPAR,     LBRC,       LBKT,       LT)       X_MM     &kp GT    &kp DOLLAR   &kp PERCENT      &kp CARET     &kp GRAVE      X_RM
             //--------------------------------------------------------------------------------------------------
-           X_LB    &caps_word  XXX   XXX        XXX        &kp UNDER    X_MB     &kp UNDER  &macro_line1   &macro_line2    &macro_line3        XXX          X_RB
+           X_LB    &caps_word  XXX   XXX        XXX        &kp UNDER    X_MB     &kp UNDER  &kp EXCLAMATION   &kp AT_SIGN    &kp HASH        &kp PIPE          X_RB
             //--------------------------------------------------------------------------------------------------
             X_LH  &sk RMEH  &kp GT  X_MH     ___        ___    X_RH
             >;

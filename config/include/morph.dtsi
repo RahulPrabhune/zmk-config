@@ -39,7 +39,7 @@ MAKE_MORPH(rpar_inner_morph, &kp RBKT, &kp RBRC, CTL)
 MAKE_MORPH(enter_morph, &lt SYM ENTER, &kp GRAVE, CTL)
 
 // tap: backspace | CTRL + tap: delete | hold: Shift
-MAKE_MORPH(bspc_morph, &mt RSHFT BSPC, &kp DEL, CTL)
+MAKE_MORPH(bspc_morph, &lt NAV BSPC, &kp DEL, CTL)
 
 // tap: print_screen | shift + tap: mute
 // tap: scroll lock  | shift + tap: vol down
