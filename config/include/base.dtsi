@@ -111,11 +111,11 @@
             display-name = "NAV";
             bindings = <
             //--------------------------------------------------------------------------------------------------
-            X_LT     &kp COLON   ___          &kp DQT  &kp SEMI  ___         X_MT     &kp PG_UP  &kp HOME   NAV_UP     ___        NAV_DEL      X_RT
+            X_LT     ___   ___          ___   ___  ___         X_MT     &kp PG_UP  &kp HOME   NAV_UP     ___        NAV_DEL      X_RT
             //--------------------------------------------------------------------------------------------------
-            X_LM     &sk LGUI   &sk LALT  ___   ___    ___          X_MM     ___        &kp LEFT   NAV_DOWN   &kp RIGHT  &kp GRAVE    X_RM
+            X_LM     ___   ___          ___   ___  ___            X_MM     ___        &kp LEFT   NAV_DOWN   &kp RIGHT  &kp SEMI    X_RM
             //--------------------------------------------------------------------------------------------------
-            X_LB     &caps_word  XXX   XXX        XXX        &kp UNDER        X_MB     &kp PG_DN  &kp END    ___        ___        ___          X_RB
+            X_LB     &caps_word  XXX   XXX        XXX        &kp UNDER        X_MB     &kp PG_DN  &kp END    &kp DQT        ___        &kp COLON          X_RB
             //--------------------------------------------------------------------------------------------------
             X_LH    ___        ___    X_MH    &kp TAB     &sk RMEH   X_RH
             >;
@@ -134,7 +134,7 @@
             X_LH   &kp TAB     ___      X_MH   &kp LT      &bspc_morph    X_RH
             >;
         };
-        
+
         symbol_layer {
             display-name = "SYM";
             bindings = <
@@ -143,7 +143,7 @@
             //--------------------------------------------------------------------------------------------------
             X_LM     HRML(GRAVE,  LPAR,     LBRC,       LBKT,       LT)       X_MM     &kp GT    &kp DOLLAR   &kp PERCENT      &kp CARET     &kp GRAVE      X_RM
             //--------------------------------------------------------------------------------------------------
-           X_LB    &to MAC     &to WIN        &bt0       &bt4        ___   X_MB     &kp UNDER  &kp EXCLAMATION   &kp AT_SIGN    &kp HASH        &kp PIPE          X_RB
+           X_LB    &to MAC     &to WIN        ___       ___    &kp UNDER   X_MB     &kp UNDER  &kp EXCLAMATION   &kp AT_SIGN    &kp HASH        &kp PIPE          X_RB
             //--------------------------------------------------------------------------------------------------
             X_LH  &sk RMEH  &kp GT  X_MH     ___        ___    X_RH
             >;
