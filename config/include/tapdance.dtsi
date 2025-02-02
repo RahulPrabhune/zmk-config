@@ -4,11 +4,11 @@
 
 / {
     behaviors {
-        dot_question_colon: dot_question_colon {
+        dot_question_colon: dot_question {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp DOT>, <&kp QMARK>, <&kp COLON>;
+            tapping-term-ms = <400>;
+            bindings = <&kp DOT>, <&kp QMARK>;
         };
     };
 };

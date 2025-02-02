@@ -77,7 +77,7 @@
             //--------------------------------------------------------------------------------------------------
             X_LM     &trans      &trans     &trans     &trans    &trans        X_MM     &trans      &trans     &trans     &trans    &trans     X_RM                
             //--------------------------------------------------------------------------------------------------
-            X_LB     &kp Z      &kp X      &kp C      &kp V      &kp B        X_MB     &kp N      &kp M      &quote_morph  &slash_morph  &dot_question_colon  X_RB
+            X_LB     &kp Z      &kp X      &kp C      &kp V      &kp B        X_MB     &kp N      &kp M      &quote_morph  &slash_morph  &dot_question  X_RB
             //--------------------------------------------------------------------------------------------------
             X_LH   &sk LSHFT    &lt SYM SPACE     X_MH     &lt NUM ENTER    &bspc_morph  X_RH
             >;
@@ -89,7 +89,7 @@
             //--------------------------------------------------------------------------------------------------
             X_LM     HRML(A,        S,         D,         F,        G)        X_MM     HRMR(H,         J,        K,         L,     COMMA)     X_RM
             //--------------------------------------------------------------------------------------------------
-            X_LB     &kp Z      &kp X      &kp C      &kp V      &kp B        X_MB     &kp N      &kp M      &quote_morph  &slash_morph  &dot_question_colon  X_RB
+            X_LB     &kp Z      &kp X      &kp C      &kp V      &kp B        X_MB     &kp N      &kp M      &quote_morph  &slash_morph  &dot_question  X_RB
             //--------------------------------------------------------------------------------------------------
             X_LH   &sk LSHFT    &lt SYM SPACE     X_MH     &lt NUM ENTER    &bspc_morph  X_RH
             >;
@@ -102,7 +102,7 @@
             //--------------------------------------------------------------------------------------------------
             X_LM     WHRML(A,        S,         D,         F,        G)        X_MM     WHRMR(H,         J,        K,         L,    COMMA)     X_RM
             //--------------------------------------------------------------------------------------------------
-            X_LB     &kp Z      &kp X      &kp C      &kp V      &kp B        X_MB     &kp N      &kp M      &quote_morph  &slash_morph  &dot_question_colon  X_RB
+            X_LB     &kp Z      &kp X      &kp C      &kp V      &kp B        X_MB     &kp N      &kp M      &quote_morph  &slash_morph  &dot_question  X_RB
             //--------------------------------------------------------------------------------------------------
             X_LH   &sk LSHFT   &lt SYM SPACE     X_MH     &lt NUM ENTER    &bspc_morph  X_RH
             >;
