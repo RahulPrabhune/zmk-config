@@ -1,0 +1,14 @@
+// vim: set ts=4 sw=4 ft=devicetree:
+
+#include "base.h"
+
+/ {
+    behaviors {
+        dot_morph_dance: dot_morph_dance {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = &dot_morph, <&kp N2>, <&kp N3>;
+        };
+    };
+};
