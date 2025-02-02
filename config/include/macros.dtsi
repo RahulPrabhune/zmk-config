@@ -47,6 +47,46 @@
                 , <&macro_tap &sk LSHFT>
                 ;
         };
+        option_left_arrow: option_left_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp LEFT_ARROW>
+                , <&macro_release &kp LALT>
+                ;
+        };
+        option_right_arrow: option_right_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp RIGHT_ARROW>
+                , <&macro_release &kp LALT>
+                ;
+        };
+         option_shift_left_arrow: option_shift_left_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_press &kp LSHFT>
+                , <&macro_tap &kp LEFT_ARROW>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp LALT>
+                ;
+        };
+        option_shift_right_arrow: option_shift_right_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_press &kp LSHFT>
+                , <&macro_tap &kp RIGHT_ARROW>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp LALT>
+                ;
+        };
         macro_line1: macro_line1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
