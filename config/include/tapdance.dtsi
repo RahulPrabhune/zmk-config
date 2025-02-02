@@ -4,7 +4,7 @@
 
 / {
     behaviors {
-        dot_question_colon: dot_question {
+        dot_question: dot_question {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
