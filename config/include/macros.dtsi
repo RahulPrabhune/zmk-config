@@ -38,6 +38,15 @@
                 , <&macro_release &kp LCTL>
                 ;
         };
+        dot_space_shift: dot_space_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp DOT>
+                , <&macro_tap &kp SPACE>
+                , <&macro_tap &sk LSHFT>
+                ;
+        };
         macro_line1: macro_line1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
