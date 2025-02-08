@@ -114,7 +114,7 @@
             //--------------------------------------------------------------------------------------------------
             X_LT     ___   ___          ___   ___  ___                      X_MT     &kp PG_UP  &kp HOME   NAV_UP     &kp END        NAV_DEL      X_RT
             //--------------------------------------------------------------------------------------------------
-            X_LM     ___   ___          ___   ___  ___                      X_MM     &option_shift_left_arrow       &kp LEFT   NAV_DOWN   &kp RIGHT  &option_shift_right_arro  X_RM
+            X_LM     ___   ___          ___   ___  ___                      X_MM     &option_shift_left_arrow       &kp LEFT   NAV_DOWN   &kp RIGHT  &option_shift_right_arrow  X_RM
             //--------------------------------------------------------------------------------------------------
             X_LB     &caps_word  XXX   XXX        XXX        &kp UNDER      X_MB     &kp PG_DN  &option_left_arrow    &kp DQT     &option_right_arrow        &kp COLON          X_RB
             //--------------------------------------------------------------------------------------------------
